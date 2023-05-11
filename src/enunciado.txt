@@ -1,0 +1,35 @@
+Desarrolle el siguiente ejercicio en un proyecto alojado en un nuevo repositorio de GitHub.
+
+Suponga que tiene que crear un API con Express que haga uso de Mongoose (siga las instrucciones proporcionadas en los apuntes para instalar 
+este módulo) para almacenar información sobre usuarios y productos.
+
+En primer lugar, deberá hacer que su máquina ejecute un servidor de MongoDB para poder crear una base de datos, la cual denominaremos, 
+por ejemplo, dsi-assessment. Siga las instrucciones especificadas en los apuntes para instalar MongoDB. Al mismo tiempo, también se 
+recomienda la instalación de la extensión MongoDB en VS Code para poder visualizar el estado de la base de datos en cualquier momento.
+
+A continuación, su aplicación debe cumplir los siguientes requisitos:
+
+Los documentos con la información de los usuarios deberán almacenarse en una colección denominada users, mientras que la información sobre 
+los productos deberá almacenarse en una colección products.
+
+La información a almacenar para un usuario será: nombre, correo electrónico, nombre de usuario (único), preferencia de compras (enumerado 
+con diferentes opciones: deporte, videojuegos, etc.). Para los productos deberá almacenar: nombre, descripción, precio, categoría 
+(enumerado con diferentes opciones: deporte, videojuegos, etc.) y usuarios que han comprado el producto. Trate de indicar en el esquema 
+correspondiente los tipos de datos y validadores adecuados. Luego, establezca rutas para:
+
+- Debe poder crear un usuario en la base de datos. SI
+- Debe poder obtener todos los usuarios almacenados en la base de datos. SI
+- Debe poder obtener un usuario concreto de la base de datos según su nombre de usuario. SI
+- Debe poder actualizar un usuario concreto en la base de datos según su nombre de usuario. NO
+- Debe poder borrar un usuario concreto de la base de datos según su nombre de usuario. ¿Qué impacto tiene lo anterior en los productos que ha comprado?
+SI
+- Debe poder crear un producto en la base de datos. SI
+- Debe poder obtener todos los productos almacenados en la base de datos. SI
+- Debe poder obtener, modificar y borrar un producto por su identificador único.
+
+A la hora de obtener información sobre los productos, debe ser capaz de mostrar información legible de los usuarios que lo han comprado, por ejemplo, 
+su nombre de usuario y correo electrónico. ¿Qué método debe usar para hacer lo anterior? (populate)
+No se permite el uso de callbacks. Solo puede hacer uso de promesas, utilizando para ello, además, la sintaxis async/await.
+
+Como entrega de esta tarea deberá indicar el enlace al repositorio GitHub con los ejercicios de evaluación solicitados.
+
